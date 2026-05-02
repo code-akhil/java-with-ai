@@ -22,7 +22,10 @@ final class SnakePanel extends JPanel {
     private static final int ROWS = 20;
     private static final int WIDTH = COLUMNS * TILE_SIZE;
     private static final int HEIGHT = ROWS * TILE_SIZE;
-    private static final int DELAY_MS = 110;
+    private static final int START_DELAY_MS = 250;
+    private static final int SPEED_UP_EVERY_POINTS = 5;
+    private static final int SPEED_STEP_MS = 10;
+    private static final int MIN_DELAY_MS = 70;
 
     private final Deque<Point> snake = new ArrayDeque<>();
     private final Random random = new Random();
@@ -40,7 +43,7 @@ final class SnakePanel extends JPanel {
         setFocusable(true);
         addKeyListener(new SnakeControls());
 
-        timer = new Timer(DELAY_MS, event -> tick());
+        timer = new Timer(START_DELAY_MS, event -> tick());
         resetGame();
     }
 
@@ -53,6 +56,7 @@ final class SnakePanel extends JPanel {
         nextDirection = Direction.RIGHT;
         score = 0;
         running = true;
+        timer.setDelay(START_DELAY_MS);
         placeApple();
         timer.start();
         repaint();
@@ -87,11 +91,19 @@ final class SnakePanel extends JPanel {
         if (ateApple) {
             score++;
             placeApple();
+            speedUpIfNeeded();
         } else {
             snake.removeLast();
         }
 
         repaint();
+    }
+
+    private void speedUpIfNeeded() {
+        if (score % SPEED_UP_EVERY_POINTS == 0) {
+            int fasterDelay = Math.max(MIN_DELAY_MS, timer.getDelay() - SPEED_STEP_MS);
+            timer.setDelay(fasterDelay);
+        }
     }
 
     private boolean isCollision(Point point, boolean growing) {
