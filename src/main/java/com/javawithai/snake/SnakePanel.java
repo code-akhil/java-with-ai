@@ -74,6 +74,7 @@ final class SnakePanel extends JPanel {
             case RIGHT -> nextHead.x++;
         }
 
+        wrapAroundBoard(nextHead);
         boolean ateApple = nextHead.equals(apple);
         if (isCollision(nextHead, ateApple)) {
             running = false;
@@ -94,9 +95,6 @@ final class SnakePanel extends JPanel {
     }
 
     private boolean isCollision(Point point, boolean growing) {
-        if (point.x < 0 || point.x >= COLUMNS || point.y < 0 || point.y >= ROWS) {
-            return true;
-        }
         Point tail = snake.peekLast();
         if (!growing && point.equals(tail)) {
             return false;
@@ -140,14 +138,28 @@ final class SnakePanel extends JPanel {
         }
     }
 
+    private void wrapAroundBoard(Point nextHead) {
+        if (nextHead.x < 0) {
+            nextHead.x = COLUMNS - 1;
+        } else if (nextHead.x >= COLUMNS) {
+            nextHead.x = 0;
+        }
+
+        if (nextHead.y < 0) {
+            nextHead.y = ROWS - 1;
+        } else if (nextHead.y >= ROWS) {
+            nextHead.y = 0;
+        }
+
+    }
+
     private void drawApple(Graphics2D g) {
         g.setColor(new Color(230, 72, 72));
         g.fillOval(
                 apple.x * TILE_SIZE + 4,
                 apple.y * TILE_SIZE + 4,
                 TILE_SIZE - 8,
-                TILE_SIZE - 8
-        );
+                TILE_SIZE - 8);
     }
 
     private void drawSnake(Graphics2D g) {
@@ -160,8 +172,7 @@ final class SnakePanel extends JPanel {
                     TILE_SIZE - 4,
                     TILE_SIZE - 4,
                     8,
-                    8
-            );
+                    8);
             isHead = false;
         }
     }
