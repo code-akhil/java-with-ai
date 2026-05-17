@@ -1,17 +1,16 @@
 # java-with-ai
-Simple app to practise java code
+Simple Spring Boot MVC app with a Hello World controller and JPA entity support.
 
-## Snake Game
-
-This is a small Java project with a `Main` class that prints `Hello, World!` and launches a simple Snake game.
+This project is a Spring Boot application that exposes a basic web controller and uses JPA for persistence.
 
 Run it with Maven:
 
 ```bash
-mvn compile exec:java
+mvn spring-boot:run
 ```
 
-Controls:
+Build the runnable jar with:
 
-- Arrow keys or `WASD` to move
-- Space to restart after game over
+```bash
+mvn clean package
+```

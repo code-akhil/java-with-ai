@@ -1,0 +1,61 @@
+id,title,description,amount,date
+1,Office Chair,Ergonomic chair for home office setup,249.99,2026-05-01
+2,ChatGPT Subscription,Monthly AI software subscription,20.00,2026-05-03
+3,Flight to Seattle,Round-trip airfare for client meeting,385.50,2026-05-05
+4,Team Lunch,Lunch with engineering team after sprint review,86.75,2026-05-06
+5,External Monitor,27-inch 4K monitor for development workstation,329.00,2026-05-07
+6,Notebook Pack,Pack of ruled notebooks and pens,18.45,2026-05-08
+7,Cloud Hosting,AWS monthly infrastructure charges,142.31,2026-05-10
+8,Taxi Ride,Ride from airport to hotel,42.80,2026-05-11
+9,Coffee Beans,Office kitchen coffee supply refill,34.25,2026-05-12
+10,USB-C Docking Station,Docking station with HDMI ethernet and charging,119.99,2026-05-13
+11,Project Management Tool,Annual subscription for task tracking platform,288.00,2026-05-14
+12,Hotel Stay,Two nights lodging for product conference,462.40,2026-05-15
+13,Printer Paper,Case of multipurpose office printer paper,41.99,2026-05-16
+14,Wireless Keyboard,Bluetooth keyboard for workstation upgrade,79.95,2026-05-17
+15,Client Dinner,Dinner with prospective enterprise customer,214.60,2026-05-18
+16,Database Backup Service,Monthly managed backup service for production database,65.00,2026-05-19
+17,Train Ticket,Regional train fare for partner workshop,58.25,2026-05-20
+18,Whiteboard Markers,Assorted dry erase markers for meeting rooms,12.99,2026-05-21
+19,Laptop Stand,Adjustable aluminum laptop stand,44.50,2026-05-22
+20,Design Software,Monthly license for design collaboration app,39.99,2026-05-23
+21,Airport Parking,Three days of parking during business trip,72.00,2026-05-24
+22,Catering Order,Boxed lunches for customer training session,328.15,2026-05-25
+23,SSD Drive,External solid state drive for backups,154.75,2026-05-26
+24,Domain Renewal,Annual renewal for company web domain,18.99,2026-05-27
+25,Desk Lamp,LED task lamp for developer desk,36.40,2026-05-28
+26,Rideshare To Office,Morning rideshare for onsite planning meeting,27.35,2026-05-29
+27,Security Monitoring,Monthly subscription for application security monitoring,99.00,2026-05-30
+28,Sticky Notes,Bulk pack of sticky notes for planning sessions,16.25,2026-05-31
+29,Conference Ticket,Registration fee for Java developer conference,599.00,2026-06-01
+30,Team Breakfast,Bagels and coffee for release kickoff,64.20,2026-06-02
+31,Webcam,HD webcam for video meetings,89.99,2026-06-03
+32,Code Repository Hosting,Monthly source control hosting plan,48.00,2026-06-04
+33,Bus Pass,Daily transit pass for downtown client visit,8.50,2026-06-05
+34,File Folders,Colored file folders for finance records,22.10,2026-06-06
+35,Mechanical Mouse,Ergonomic wireless mouse for workstation,57.80,2026-06-07
+36,API Usage Charges,Usage-based charges for AI model API calls,73.64,2026-06-08
+37,Meal Delivery,Dinner delivery during late deployment window,49.30,2026-06-09
+38,HDMI Cables,Pack of HDMI cables for conference rooms,31.49,2026-06-10
+39,Cloud Storage,Monthly cloud file storage subscription,24.99,2026-06-11
+40,Office Snacks,Assorted snacks for shared kitchen,53.75,2026-06-12
+41,Standing Desk Converter,Desktop riser for sit stand setup,187.20,2026-06-13
+42,VPN Service,Annual VPN service subscription for remote access,120.00,2026-06-14
+43,Gas Reimbursement,Mileage fuel reimbursement for customer site visit,67.45,2026-06-15
+44,Presentation Clicker,Wireless presenter remote for demos,29.95,2026-06-16
+45,Customer Coffee Meeting,Coffee meeting with startup founder,18.80,2026-06-17
+46,Logging Platform,Monthly subscription for centralized application logs,110.00,2026-06-18
+47,Replacement Charger,USB-C laptop charger replacement,69.00,2026-06-19
+48,Shipping Labels,Label rolls for office mailroom printer,26.60,2026-06-20
+49,Online Course,Java records and data pipelines training course,149.00,2026-06-21
+50,Airport Shuttle,Shared shuttle from hotel to airport,33.25,2026-06-22
+51,Data Visualization Tool,Monthly analytics dashboard subscription,55.00,2026-06-23
+52,Monitor Arm,Dual monitor mounting arm for desk setup,98.90,2026-06-24
+53,Team Pizza,Pizza order for engineering retrospective,112.35,2026-06-25
+54,Notebook Battery,Replacement laptop battery for engineering laptop,129.99,2026-06-26
+55,Accounting Software,Monthly bookkeeping software subscription,45.00,2026-06-27
+56,Parking Meter,Street parking during client presentation,14.75,2026-06-28
+57,Envelopes,Box of business mailing envelopes,11.95,2026-06-29
+58,Load Testing Service,Usage charges for performance testing platform,88.40,2026-06-30
+59,Business Dinner,Dinner with implementation partner,176.55,2026-07-01
+60,Tablet Device,Tablet for trade show booth check-ins,399.00,2026-07-02
